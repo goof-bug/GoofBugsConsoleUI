@@ -5,4 +5,8 @@
     <Configurations>Debug;Release;Test</Configurations>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Gustav\Source\Repos\goof-bug\GoofBugsConsoleUI\GoofBugsConsoleUI\GoofBugsConsoleUI.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>
