@@ -2,6 +2,7 @@
 
 namespace GoofBugsConsoleUI
 {
+    /// <remarks>A class for managing and generating progress bar.</remarks>
     public class ProgressBar
     {
         /// The length of the progress bar in characters.
