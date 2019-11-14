@@ -124,8 +124,8 @@ namespace GoofBugsConsoleUI
                 _progressBar += fullSegment;
             }
 
-            // Pad the bar left to the desired bar length.
-            _progressBar.PadRight(barLength, blankSegment);
+            // Pad the bar right to the desired bar length.
+            _progressBar = _progressBar.PadRight(barLength, blankSegment);
 
             // If the border bool is set generate the border.
             if (border)
