@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GoofBugsConsoleUI</name>
+    </assembly>
+    <members>
+        <member name="T:GoofBugsConsoleUI.ProgressBar">
+            <remarks>A class for managing and generating progress bar.</remarks>
+        </member>
+        <member name="F:GoofBugsConsoleUI.ProgressBar.barLength">
+            The length of the progress bar in characters.
+        </member>
+        <member name="F:GoofBugsConsoleUI.ProgressBar.maxValue">
+            The inclusive maximum value of the value range. The minimum is always 0.
+        </member>
+        <member name="F:GoofBugsConsoleUI.ProgressBar.stepValue">
+            The value that is used to calculate the full segments of the bar.
+        </member>
+        <member name="F:GoofBugsConsoleUI.ProgressBar.currentValue">
+            The current value of the bar.
+        </member>
+        <member name="F:GoofBugsConsoleUI.ProgressBar.progressBar">
+            The string that represents the progressbar.
+        </member>
+        <member name="F:GoofBugsConsoleUI.ProgressBar.fullSegment">
+            The characters that represent the full and blank segments.
+        </member>
+        <member name="F:GoofBugsConsoleUI.ProgressBar.border">
+            The bool that determines if the decorative border is included in the progressBar string.
+        </member>
+        <member name="M:GoofBugsConsoleUI.ProgressBar.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor for a new progress bar.
+            </summary>
+            <param name="_barLength">The length of the bar in characters.</param>
+            <param name="_maxValue">The inclusive maximum value of the value range.</param>
+        </member>
+        <member name="M:GoofBugsConsoleUI.ProgressBar.#ctor(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Constructor for a new progress bar.
+            </summary>
+            <param name="_barLength">The length of the bar in characters.</param>
+            <param name="_maxValue">The inclusive maximum value of the value range.</param>
+            <param name="_border">The bool that determines if the decorative bordes is included.</param>
+        </member>
+        <member name="M:GoofBugsConsoleUI.ProgressBar.#ctor(System.Int32,System.Int32,System.Boolean,System.Char,System.Char)">
+            <summary>
+            Constructor for a new progress bar.
+            </summary>
+            <param name="_barLength">The length of the bar in characters.</param>
+            <param name="_maxValue">The inclusive maximum value of the value range.</param>
+            <param name="_border">The bool that determines if the decorative bordes is included.</param>
+            <param name="_fullSegment">The char that represents a full segment.</param>
+            <param name="_blankSegment">The char that represents a blank segment.</param>
+        </member>
+        <member name="M:GoofBugsConsoleUI.ProgressBar.GetProgressBarString">
+            <summary>
+            Method for generating and returning a progress bar with the current value.
+            </summary>
+            <returns>a string that represents the current progress.</returns>
+        </member>
+        <member name="M:GoofBugsConsoleUI.ProgressBar.GetPercentage">
+            <summary>
+            Method that calculates and returns the percentage of the currentValue and maxValue.
+            </summary>
+            <returns>a float between 0 and 100 that represents the percentage.</returns>
+        </member>
+        <member name="M:GoofBugsConsoleUI.ProgressBar.SetCurrentValue(System.Int32)">
+            <summary>
+            Sets the current value that the progress bar should represent.
+            </summary>
+            <param name="_currentValue">The value that should be set.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when _currentValue is less than 0 or greater than the maxValue of the progressbar.</exception>
+        </member>
+        <member name="M:GoofBugsConsoleUI.ProgressBar.UpdateProgressBar">
+            <summary>
+            Method that generates a new progress bar from the current value.
+            </summary>
+        </member>
+    </members>
+</doc>
