@@ -97,6 +97,7 @@ namespace GoofBugsConsoleUI
         /// Sets the current value that the progress bar should represent.
         /// </summary>
         /// <param name="_currentValue">The value that should be set.</param>
+        /// <exception cref="System.ArgumentOutOfRangeException">Thrown when _currentValue is less than 0 or greater than the maxValue of the progressbar.</exception>
         public void SetCurrentValue(int _currentValue)
         {
             // If current value is outside of the accepted range throw an exception, if it is assign the value.
